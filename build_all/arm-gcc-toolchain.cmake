@@ -37,8 +37,7 @@ set(CMAKE_ASM_COMPILER ${CMAKE_C_COMPILER})
 set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PREFIX}g++)
 
 # Default C compiler flags
-#set(CMAKE_C_FLAGS "${CONFIG_DEFS} -Wall -Wno-format-truncation -Wno-maybe-uninitialized -Wno-unused-const-variable -Wno-unused-variable -Wno-unused-parameter -Wno-unused-function -Wno-stringop-truncation -mcpu=cortex-m7 -std=gnu11 -ffunction-sections -fdata-sections -fstack-usage --specs=standard_c_nano_cpp.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb")
-set(CMAKE_C_FLAGS "${CONFIG_DEFS} -Wall -Wno-format-truncation -Wno-maybe-uninitialized -Wno-unused-const-variable -Wno-unused-variable -Wno-unused-parameter -Wno-unused-function -Wno-stringop-truncation -mcpu=cortex-m7 -std=gnu11 -fstack-usage --specs=standard_c_nano_cpp.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb")
+set(CMAKE_C_FLAGS "${CONFIG_DEFS} -mcpu=cortex-m7 -ffunction-sections -fdata-sections -fstack-usage --specs=standard_c_nano_cpp.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb")
 set(CMAKE_C_FLAGS_DEBUG_INIT "-g3 -Og -DDEBUG")
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG_INIT}" CACHE STRING "" FORCE)
 set(CMAKE_C_FLAGS_RELEASE_INIT "-O3")
