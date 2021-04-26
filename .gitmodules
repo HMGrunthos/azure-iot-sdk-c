@@ -1,6 +1,6 @@
 [submodule "azure-c-shared-utility"]
 	path = c-utility
-	url = https://github.com/Azure/azure-c-shared-utility.git
+	url = git@github.com:HMGrunthos/azure-c-shared-utility.git
 [submodule "azure-umqtt-c"]
 	path = umqtt
 	url = https://github.com/Azure/azure-umqtt-c.git
@@ -24,7 +24,7 @@
 	url = https://github.com/Azure/azure-macro-utils-c.git
 [submodule "deps/umock-c"]
 	path = deps/umock-c
-	url = https://github.com/Azure/umock-c.git
+	url = git@github.com:HMGrunthos/umock-c.git
 [submodule "deps/azure-c-testrunnerswitcher"]
 	path = deps/azure-c-testrunnerswitcher
 	url = https://github.com/Azure/azure-c-testrunnerswitcher.git
